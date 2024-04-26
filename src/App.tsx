@@ -1,25 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { HashRouter as Router, Route, Routes, Navigate } from 'react-router-dom'
+import AllTodos from './pages/AllTodos';
+import DeletedTodos from './pages/DeletedTodos';
+import NotFound from './pages/NotFound';
+import Header from './components/Header';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Header />
+        <Routes>
+          <Route
+            path="/"
+            element={<Navigate to="/allTodos" replace />}
+          />
+          <Route path="/allTodos" element={<AllTodos />} />
+          <Route path="/deletedTodos" element={<DeletedTodos />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+    </Router>
   );
 }
 

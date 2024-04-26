@@ -1,0 +1,32 @@
+.todoItem{
+    color: rgb(0, 51, 102);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 300px;
+}
+
+.todoItemDescription{
+    max-width: 50vw;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    &:first-letter{
+        text-transform: uppercase;
+    }
+}
+
+.todoItemCompleted{
+    text-decoration: line-through;
+    color: #8fa882;
+}
+
+.todoItemControllers{
+    display: flex;
+    align-items: center;
+}
+
+.todoItemCheckbox{
+    height: 15px;
+    width: 15px;
+}
