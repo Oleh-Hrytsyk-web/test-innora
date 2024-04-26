@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/test-innora/static/css/main.c4c52ac8.css",
+    "main.js": "/test-innora/static/js/main.1dbcb639.js",
+    "index.html": "/test-innora/index.html",
+    "main.c4c52ac8.css.map": "/test-innora/static/css/main.c4c52ac8.css.map",
+    "main.1dbcb639.js.map": "/test-innora/static/js/main.1dbcb639.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c4c52ac8.css",
+    "static/js/main.1dbcb639.js"
+  ]
+}
